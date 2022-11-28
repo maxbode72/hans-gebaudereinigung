@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", Helvetica, Arial;
-  font-size: 14px;
+  font-size: 16px;
   background-color: var(--color-secondary);
 }
 
@@ -52,7 +52,6 @@ nav {
 .nav-link {
   color: var(--color-secondary);
   white-space: nowrap;
-  padding: 0.5em;
 }
 
 .nav-link:hover {
@@ -291,7 +290,7 @@ nav {
 
 .skill-section {
   display: flex;
-  gap: 2em;
+  gap: 1em;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -315,15 +314,16 @@ nav {
 
   background-color: var(--color-secondary);
   border-radius: 10px;
-  box-shadow: 0 0 10px #00000030;
 }
+
 
 /* -------- */
 /*  Footer  */
 /* -------- */
 
 footer {
-  background-color: var(--color-offwhite);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   padding: 3em 7em;
   justify-content: space-around;
   border-top: 1px solid var(--color-primary);
@@ -382,7 +382,7 @@ nav ul {
 }
 
 .sec-nav-link:hover {
-  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-secondary);
 }
 
 @media (max-width: 35em) {

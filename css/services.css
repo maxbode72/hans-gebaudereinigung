@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", Helvetica, Arial;
-  font-size: 14px;
+  font-size: 16px;
   background-color: var(--color-secondary);
 }
 
@@ -52,7 +52,6 @@ nav {
 .nav-link {
   color: var(--color-secondary);
   white-space: nowrap;
-  padding: 0.5em;
 }
 
 .nav-link:hover {
@@ -123,207 +122,85 @@ nav {
 /* ------ */
 
 .hero {
-  margin: auto;
-  padding-block: 10em;
-  min-height: 80vh;
-  padding-inline: min(10rem, 7vw);
   flex-direction: column;
-  background-color: var(--color-primary);
+  gap: 1em;
+
+  padding-inline: 7em;
+  padding-block: 5em;
+  margin: 0 auto;
+
+  max-width: 1800px;
 }
 
 .hero-title {
-  max-width: 25ch;
-  font-size: var(--step-4);
   line-height: 1.25em;
-  color: var(--color-secondary);
 }
 
 .hero-text {
-  max-width: 45ch;
-  line-height: 1.5rem;
-  color: var(--color-secondary);
-}
-
-.cta-buttons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2em;
-}
-
-.custom-shape-divider-top-1669624244 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  fill: var(--color-primary);
-}
-
-@media (max-width: 35em) {
-  .hero {
-    padding-block: 6em;
-  }
-}
-
-/* --------------- */
-/*  Image Section  */
-/* --------------- */
-
-.image-section {
-  display: block;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-  padding-inline: min(10rem, 7vw);
-
-  width: 100%;
-}
-
-.image-content {
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: 2em;
-  position: relative;
-  transform: translateY(10em);
-  z-index: 1;
-
-  margin: 0 auto;
-
-  max-width: 1800px;
-
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-/* 
-@media (max-width: 55em) {
-    .image-content {
-        top: -13em;
-    }
-}
-
-@media (max-width: 35em) {
-    .image-content {
-        top: -8em;
-    }
-} */
-
-.image-container {
-  display: flex;
-  flex: 1 1;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.image {
-  height: 30em;
-  width: 18em;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.image-one {
-  background-image: url(/assets/top-view-of-cleaning-company-team-cleaning-modern-2022-11-02-00-41-14-utc.jpg);
-}
-.image-two {
-  background-image: url(/assets/workers-of-cleaning-service-company-carrying-out-t-2022-04-29-00-29-17-utc.jpg);
-  background-position: 40%;
-}
-.image-three {
-  background-image: url(/assets/nuno-silva-Rcsa_Rg77Tc-unsplash.jpg);
-  background-position: 15%;
-}
-
-/* --------------- */
-/*  Offer Section  */
-/* --------------- */
-
-.offer-section {
-  display: flex;
-  gap: 2em;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-  max-width: 1800px;
-  margin: 0 auto;
-
-  padding-block: 5em;
-  padding-inline: min(10rem, 7vw);
-  width: 100%;
-}
-
-.offer-content {
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-}
-
-.offer-description {
   max-width: 75ch;
-  line-height: 1.35em;
+  line-height: 1.5em;
 }
 
-.offer-section button {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  width: auto;
-}
+/* ---------- */
+/*  branchen  */
+/* ---------- */
 
-.offer-button {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-
-/* --------------- */
-/*  Skill Section  */
-/* --------------- */
-
-.skill-section {
-  display: flex;
-  gap: 2em;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-
-  max-width: 1800px;
-  margin: 0 auto;
-
-  padding-block: 5em;
-  padding-inline: min(10rem, 7vw);
-  width: 100%;
-}
-
-.skill-container {
-  display: flex;
+.branchen {
   flex-direction: column;
   gap: 1em;
 
-  padding: 1em;
-  max-width: 30ch;
+  padding-inline: 7em;
+  padding-block: 0em 3em;
+  margin: 0 auto;
 
-  background-color: var(--color-secondary);
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00000030;
+  max-width: 1800px;
 }
+
+.branchen-title {
+  line-height: 1.25em;
+}
+
+.branchen-container {
+  width: 10em;
+}
+
+.branchen-image {
+  width: inherit;
+  border-radius: 10px 10px 0 0;
+}
+
+.branchen-label {
+  padding: .75em 1em;
+  border-radius: 0 0px 10px 10px;
+  background-color: var(--color-secondary-dark);
+  width: inherit;
+}
+
+
+/* ------- */
+/*  Offer  */
+/* ------- */
+
+.service {
+  flex-direction: column;
+  gap: 1em;
+
+  padding-inline: 7em;
+  padding-block: 0em 3em;
+  margin: 0 auto;
+
+  max-width: 1800px;
+}
+
+
 
 /* -------- */
 /*  Footer  */
 /* -------- */
 
 footer {
-  background-color: var(--color-offwhite);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   padding: 3em 7em;
   justify-content: space-around;
   border-top: 1px solid var(--color-primary);
@@ -382,7 +259,7 @@ nav ul {
 }
 
 .sec-nav-link:hover {
-  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-secondary);
 }
 
 @media (max-width: 35em) {

@@ -76,6 +76,10 @@ img {
 /* Utility Classes */
 /* --------------- */
 
+.active {
+    border-bottom: 1px solid var(--color-secondary);
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
