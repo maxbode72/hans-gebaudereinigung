@@ -2,9 +2,9 @@
   --color-primary: #5A80F2;
   --color-primary-light: #92afff;
   --color-primary-dark: #0454bf;
-  --color-secondary: #FCFCFC;
+  --color-secondary: #f7f7f7;
   --color-secondary-light: #ffffff;
-  --color-secondary-dark: #c3bebb;
+  --color-secondary-dark: #efefef;
   --color-dark: #212738;
 
   --fz-xl: clamp(2rem, 10vw + 1rem, 4rem);
@@ -99,4 +99,19 @@ img {
   font-weight: 500;
   width: max-content;
   height: max-content;
+}
+
+
+/* -------------------- */
+/*    Custom Shapes     */
+/* -------------------- */
+
+.wave-divider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  fill: var(--color-secondary-dark);
 }
