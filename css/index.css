@@ -91,6 +91,12 @@ nav {
     transform: translateX(0%);
   }
 
+  .nav-link {
+    color: var(--color-primary);
+    white-space: nowrap;
+    padding: 1em;
+  }
+
   .mobile-nav-toggle {
     display: block;
     position: absolute;
@@ -103,6 +109,7 @@ nav {
     background: transparent;
     background-image: url("assets/icons/burgermenu.svg");
     background-repeat: no-repeat;
+    fill: var(--color-secondary);
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {

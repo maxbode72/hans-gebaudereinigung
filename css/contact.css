@@ -39,7 +39,7 @@ nav {
 
 .logo {
   margin: 1.5em;
-  height: 4em;
+  height: 3.5em;
 }
 
 .primary-navigation {
@@ -90,6 +90,12 @@ nav {
     transform: translateX(0%);
   }
 
+  .nav-link {
+    color: var(--color-primary);
+    white-space: nowrap;
+    padding: 1em;
+  }
+
   .mobile-nav-toggle {
     display: block;
     position: absolute;
@@ -102,6 +108,7 @@ nav {
     background: transparent;
     background-image: url("assets/icons/burgermenu.svg");
     background-repeat: no-repeat;
+    fill: var(--color-secondary);
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -159,21 +166,23 @@ nav {
   color: var(--color-secondary);
 }
 
-.custom-shape-divider-top-1669624244 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  fill: var(--color-primary);
-}
-
 @media (max-width: 35em) {
   .hero {
     padding-block: 6em;
   }
 }
+
+.divider-below {
+  position: relative;
+  rotate: 180deg;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  fill: var(--color-primary); 
+}
+
 
 /* -------------- */
 /*  Form Section  */
@@ -239,13 +248,21 @@ label {
   color: var(--color-dark);
 }
 
-.datenschutz-checkbox a{
+.datenschutz-box {
+  margin-bottom: 1em;
+}
+
+.datenschutz-box a{
   color: var(--color-primary);
   text-decoration: none;
 }
 
-.datenschutz-checkbox a:hover{
+.datenschutz-box a:hover{
   border-bottom: 1px solid var(--color-primary) ;
+}
+
+.datenschutz-checkbox {
+  margin: 0;
 }
 
 .submit-btn:hover {
