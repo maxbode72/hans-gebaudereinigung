@@ -123,31 +123,40 @@ nav {
 
 .hero {
   margin: auto;
-  padding-block: 10em;
-  min-height: 80vh;
+  padding-block: 7em 5em;
   padding-inline: min(10rem, 7vw);
   flex-direction: column;
   background-color: var(--color-primary);
 }
 
 .hero-title {
-  max-width: 25ch;
-  font-size: var(--step-4);
+  max-width: 30ch;
+  font-size: var(--step-3);
   line-height: 1.25em;
   color: var(--color-secondary);
 }
 
 .hero-text {
-  max-width: 45ch;
-  line-height: 1.5rem;
   color: var(--color-secondary);
+  max-width: 60ch;
+  margin-bottom: 5em;
 }
 
-.cta-buttons {
+.contact-information {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  max-width: 1800px;
   gap: 2em;
+
+  justify-content: space-between;
+}
+
+.contact-text {
+  max-width: 45ch;
+  line-height: 1.5rem;
+  color: var(--color-secondary);
 }
 
 .custom-shape-divider-top-1669624244 {
@@ -166,129 +175,11 @@ nav {
   }
 }
 
-/* --------------- */
-/*  Image Section  */
-/* --------------- */
+/* -------------- */
+/*  Form Section  */
+/* -------------- */
 
-.image-section {
-  display: block;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-  padding-inline: min(10rem, 7vw);
-
-  width: 100%;
-}
-
-.image-content {
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: 2em;
-  position: relative;
-  transform: translateY(10em);
-  z-index: 1;
-
-  margin: 0 auto;
-
-  max-width: 1800px;
-
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-/* 
-@media (max-width: 55em) {
-    .image-content {
-        top: -13em;
-    }
-}
-
-@media (max-width: 35em) {
-    .image-content {
-        top: -8em;
-    }
-} */
-
-.image-container {
-  display: flex;
-  flex: 1 1;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.image {
-  height: 30em;
-  width: 18em;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.image-one {
-  background-image: url(/assets/top-view-of-cleaning-company-team-cleaning-modern-2022-11-02-00-41-14-utc.jpg);
-}
-.image-two {
-  background-image: url(/assets/workers-of-cleaning-service-company-carrying-out-t-2022-04-29-00-29-17-utc.jpg);
-  background-position: 40%;
-}
-.image-three {
-  background-image: url(/assets/nuno-silva-Rcsa_Rg77Tc-unsplash.jpg);
-  background-position: 15%;
-}
-
-/* --------------- */
-/*  Offer Section  */
-/* --------------- */
-
-.offer-section {
-  display: flex;
-  gap: 2em;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-  max-width: 1800px;
-  margin: 0 auto;
-
-  padding-block: 5em;
-  padding-inline: min(10rem, 7vw);
-  width: 100%;
-}
-
-.offer-content {
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-}
-
-.offer-description {
-  max-width: 75ch;
-  line-height: 1.35em;
-}
-
-.offer-section button {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  width: auto;
-}
-
-.offer-button {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-
-/* --------------- */
-/*  Skill Section  */
-/* --------------- */
-
-.skill-section {
+.form-section {
   display: flex;
   gap: 1em;
   flex-direction: row;
@@ -296,25 +187,72 @@ nav {
   align-items: center;
   justify-content: space-around;
 
-  max-width: 1800px;
   margin: 0 auto;
 
   padding-block: 5em;
   padding-inline: min(10rem, 7vw);
   width: 100%;
+
+  overflow: none;
 }
 
-.skill-container {
+.form-container {
   display: flex;
   flex-direction: column;
   gap: 1em;
 
+  max-width: 1000px;
   padding: 1em;
-  max-width: 30ch;
 
-  background-color: var(--color-secondary);
   border-radius: 10px;
 }
+
+form {
+  display: grid;
+}
+
+input,
+select,
+textarea {
+  padding: .5rem;
+  margin-bottom: 1.5em;
+
+  border-radius: 5px;
+  border: 2px solid var(--color-secondary-dark);
+
+  font-family: "Inter", Helvetica, Arial;
+}
+
+input :focus,
+select :focus,
+textarea :focus{
+  border-color: var(--color-primary);
+}
+
+textarea {
+  max-width: auto;
+}
+
+label {
+  font-size: .85em;
+  padding-bottom: .25em;
+  color: var(--color-dark);
+}
+
+.datenschutz-checkbox a{
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.datenschutz-checkbox a:hover{
+  border-bottom: 1px solid var(--color-primary) ;
+}
+
+.submit-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  cursor: pointer;
+} 
 
 
 /* -------- */
@@ -367,8 +305,6 @@ footer {
 }
 
 footer nav {
-  float: right;
-  opacity: 50%;
   font-weight: 300;
 }   
 
@@ -390,9 +326,17 @@ nav ul {
     justify-content: left;
     --gap: 2em;
     flex-direction: column;
+
+    padding: 1em;
+    height: auto;
   }
 
   .secondary-navigation {
     --gap: 1em;
+  }
+
+  footer nav ul{
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -308,7 +308,7 @@ footer {
   color: var(--color-secondary);
   padding: 3em 7em;
   justify-content: space-around;
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-primary);
 }
 
 .primary-footer {
@@ -349,8 +349,6 @@ footer {
 }
 
 footer nav {
-  float: right;
-  opacity: 50%;
   font-weight: 300;
 }   
 
@@ -372,9 +370,17 @@ nav ul {
     justify-content: left;
     --gap: 2em;
     flex-direction: column;
+
+    padding: 1em;
+    height: auto;
   }
 
   .secondary-navigation {
     --gap: 1em;
+  }
+
+  footer nav ul{
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -12,9 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet" />
-        <script src="nav.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="nav.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
@@ -43,33 +43,58 @@
     <main>
         <section class="hero flex">
             <h2 class="hero-title">
-                Lorem ipsum dolor sit consectetur adipisicing elit Recusandae
+                So können Sie mit uns in Kontakt treten
             </h2>
             <p class="hero-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-                repellendus cum rem, itaque modi, fuga accusamus numquam architecto
-                animi.
+                Füllen Sie ganz unverbindlich den Fragebogen unten aus und wir melden uns bei Ihnen so schnell wie möglich für einen Gesprächstermin
             </p>
-            <div class="cta-buttons">
-                <button class="button-small">Mehr Lesen</button>
-                <button class="button-small">Anfragen</button>
+            <div class="contact-information">
+                <div class="contact-container">
+                    <img class="contact-icon" src="assets/icons/phone-icon.svg" alt="">
+                    <p class="contact-text">+49 123 4567 8901</p>
+                </div>
+                <div class="contact-container">
+                    <img class="contact-icon" src="assets/icons/mail-icon.svg" alt="">
+                    <p class="contact-text">hilfe@example.com</p>
+                </div>
+                <div class="contact-container">
+                    <img class="contact-icon" src="assets/icons/location-icon.svg" alt="">
+                    <p class="contact-text">Musterstraße 72, 30982 München</p>
+                </div>
             </div>
         </section>
-        <section class="skill-section">
-            <form action="mail_handler.php" method="post">
-                First Name: <input type="text" name="first_name"><br>
-                Last Name: <input type="text" name="last_name"><br>
-                Email: <input type="text" name="email"><br>
-                Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-                <input type="submit" name="submit" value="Submit">
+        <section class="form-section">
+            <div class="form-container">
+                <form action="https://formsubmit.co/ttv.reasn@gmail.com" method="POST">
+                    <label>Vorname</label>
+                    <input type="text" name="vorname" required />
+                    <label>Name</label>
+                    <input type="text" name="nachname" required />
+                    <label>Email</label>
+                    <input type="email" name="email" required />
+                    <label>Dienstleistung</label>
+                    <select id="dienstleistung" name="dienstleistung" required>
+                        <option value="fensterreinigung">Fensterreinigung</option>
+                        <option value="fassadenreinigung">Fassadenreinigung</option>
+                        <option value="unterhaltsreinigung">Unterhaltsreinigung</option>
+                    </select>
+                    <label>Anmerkungen</label>
+                    <textarea rows="5" name="Anmerkungen" cols="30"></textarea>
+                    <div class="datenschutz-box">
+                        <input class="datenschutz-checkbox" type="checkbox" id="datenschutz-zustimmung" name="datenschutz-zustimmung" value="datenschutz-zustimmung" required>
+                        <label for="datenschutz-zustimmung">Ich habe die <a href="datenschutzbestimmung.html">Datenschutzbestimmungen </a>gelesen und stimme der Weiterverarbeitung meiner Daten für diese Kontaktaufnahme zu.</label><br>
+                    </div>
+                    <input class="submit-btn" type="submit" name="submit" value="Submit" />
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
+            </div>
         </section>
     </main>
     <footer>
         <div class="primary-footer">
             <a class="logo-container" href="index.html">
-                <img class="logo-footer" src="/assets/logo.svg"
-                    alt="Logo">
+                <img class="logo-footer" src="/assets/logo.svg" alt="Logo" />
             </a>
             <div class="contact">
                 <div class="contact-wrapper">
@@ -80,7 +105,7 @@
                         <p>hilfe@example.com</p>
                     </div>
                     <div class="contact-container">
-                        <p>Musterstraße 72<br>30982 München</p>
+                        <p>Musterstraße 72<br />30982 München</p>
                     </div>
                 </div>
             </div>

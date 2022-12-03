@@ -56,19 +56,6 @@
                 <button class="button-small">Mehr Lesen</button>
                 <button class="button-small">Anfragen</button>
             </div>
-            <!-- <div class="image-section">
-                <div class="image-content">
-                    <div class="image-container">
-                        <div class="image image-one"></div>
-                    </div>
-                    <div class="image-container">
-                        <div class="image image-two"></div>
-                    </div>
-                    <div class="image-container">
-                        <div class="image image-three"></div>
-                    </div>
-                </div>
-            </div> -->
         </section>
         <div class="custom-shape-divider-top-1669624244">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -76,19 +63,6 @@
                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
             </svg>
         </div>
-        <!-- <section class="image-section">
-            <div class="image-content">
-                <div class="image-container">
-                    <div class="image image-one"></div>
-                </div>
-                <div class="image-container">
-                    <div class="image image-two"></div>
-                </div>
-                <div class="image-container">
-                    <div class="image image-three"></div>
-                </div>
-            </div>
-        </section> -->
         <section class="offer-section">
             <div class="offer-content">
                 <h3 class="offer-title">Ihr Gebäude in guten Händen</h3>
@@ -144,21 +118,38 @@
         </section>
         <img src="assets/wave-divider.svg" alt="" class="wave-divider divider-below">
         <section class="contact-section">
-            <div class="contact-content">
-                <h3 class="contact-title">Treten Sie in Kontakt mit uns</h3>
-                <p class="contact-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
-                    incidunt eligendi blanditiis nulla, odit magnam quos mollitia recusandae nemo, quidem omnis quod
-                    tenetur. Quod exercitationem enim tempore, consectetur minus consequuntur atque ipsam, possimus
-                    fugit at repellendus sequi amet nobis id voluptate aliquam recusandae, nemo quasi porro qui soluta
-                    eum. Voluptates.</p>
-                <p class="contact-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
-                    incidunt eligendi blanditiis nulla, odit magnam quos mollitia recusandae nemo, quidem omnis quod
-                    tenetur. Quod exercitationem enim tempore, consectetur minus consequuntur atque ipsam, possimus
-                    fugit at repellendus sequi amet nobis id voluptate aliquam recusandae, nemo quasi porro qui soluta
-                    eum. Voluptates.</p>
+            <div class="form-container">
+                <form action="https://formsubmit.co/ttv.reasn@gmail.com" method="POST">
+                    <label>Vorname</label>
+                    <input type="text" name="vorname" required />
+                    <label>Name</label>
+                    <input type="text" name="nachname" required />
+                    <label>Email</label>
+                    <input type="email" name="email" required />
+                    <label>Dienstleistung</label>
+                    <select id="dienstleistung" name="dienstleistung" required>
+                        <option value="fensterreinigung">Fensterreinigung</option>
+                        <option value="fassadenreinigung">Fassadenreinigung</option>
+                        <option value="unterhaltsreinigung">Unterhaltsreinigung</option>
+                    </select>
+                    <label>Anmerkungen</label>
+                    <textarea rows="5" name="Anmerkungen" cols="30"></textarea>
+                    <div class="datenschutz-box">
+                        <input class="datenschutz-checkbox" type="checkbox" id="datenschutz-zustimmung" name="datenschutz-zustimmung" value="datenschutz-zustimmung" required>
+                        <label for="datenschutz-zustimmung">Ich habe die <a href="datenschutzbestimmung.html">Datenschutzbestimmungen </a>gelesen und stimme der Weiterverarbeitung meiner Daten für diese Kontaktaufnahme zu.</label><br>
+                    </div>
+                    <input class="submit-btn" type="submit" name="submit" value="Submit" />
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
             </div>
-            <div class="contact-button">
-                <button class="button-small">Alle Dienstleistungen entdecken</button>
+            <div class="contact-content">
+                <h3 class="contact-title">Treten Sie <a>einfach</a> und <a>unverbindlich</a> in Kontakt mit uns</h3>
+                <p class="contact-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
+                    incidunt eligendi blanditiis nulla, odit magnam quos mollitia recusandae nemo, quidem omnis quod
+                    tenetur. Quod exercitationem enim tempore, consectetur minus consequuntur atque ipsam, possimus
+                    fugit at repellendus sequi amet nobis id voluptate aliquam recusandae, nemo quasi porro qui soluta
+                    eum. Voluptates.</p>
             </div>
         </section>
     </main>
