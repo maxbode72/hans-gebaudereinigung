@@ -142,42 +142,40 @@
   /* ------ */
   
   .hero {
+    height: 85vh;
+    width: 100vw;
     margin: auto;
     padding-block: 10em;
-    min-height: 80vh;
     padding-inline: min(10rem, 7vw);
+    background-color: var(--color-secondary);
+    display: flex;
     flex-direction: column;
-    background-color: var(--color-primary);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   
   .hero-title {
     max-width: 25ch;
     font-size: var(--step-4);
     line-height: 1.25em;
-    color: var(--color-secondary);
+    color: var(--color-dark);
   }
   
   .hero-text {
     max-width: 45ch;
     line-height: 1.5rem;
+    color: var(--color-dark);
+  }
+
+  .back-btn {
+    padding: 1em 3em;
+    background-color: var(--color-primary);
     color: var(--color-secondary);
-  }
-  
-  .cta-buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2em;
-  }
-  
-  .custom-shape-divider-top-1669624244 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    fill: var(--color-primary);
+    border-radius: 100vmax;
+    border: none;
+    font-size: 14px;
+    margin-top: 2em;
   }
   
   @media (max-width: 35em) {

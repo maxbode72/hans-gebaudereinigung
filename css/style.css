@@ -93,12 +93,18 @@ img {
   color: var(--color-dark);
   background-color: var(--color-secondary);
   padding: 1em 2em;
+  font-size: 14px;
   border: none;
   border-radius: 100vmax;
   cursor: pointer;
   font-weight: 500;
   width: max-content;
   height: max-content;
+  margin-top: 1em;
+}
+
+.button-small:hover {
+  background-color: var(--color-secondary-dark);
 }
 
 
