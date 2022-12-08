@@ -222,6 +222,7 @@ nav {
 
   padding: 1em;
   max-width: 30ch;
+  min-height: 12.5em;
 
   background-color: var(--color-secondary);
   border-radius: 10px;

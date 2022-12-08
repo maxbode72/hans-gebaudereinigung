@@ -140,20 +140,21 @@ nav {
   /*  Hero  */
   /* ------ */
   
-  .hero {
+  .datenschutz {
     margin: auto;
-    padding-block: 10em;
+    padding-block: 5em;
     min-height: 80vh;
     padding-inline: min(10rem, 7vw);
     flex-direction: column;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
   }
   
-  .hero-title {
+  .datenschutz-title {
     max-width: 25ch;
-    font-size: var(--step-4);
+    font-size: var(--step-2);
     line-height: 1.25em;
-    color: var(--color-secondary);
+    margin-bottom: .75em;
   }
   
   .hero-text {
