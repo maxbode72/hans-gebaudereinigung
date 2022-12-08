@@ -206,6 +206,7 @@ nav {
 .branchen-image {
   width: inherit;
   border-radius: 10px 10px 0 0;
+  aspect-ratio: 16,9;
 }
 
 .branchen-label {
