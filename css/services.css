@@ -67,8 +67,23 @@ nav {
     padding: 0 8em 0 0;
   }
 
+
+  .primary-navigation li {
+    width: 100%;
+    padding: 1.5em;
+    text-align: center;
+  }
+
+  .primary-navigation li:nth-child(-n+3) {
+    border-bottom: 1px solid var(--color-primary);
+  }
+
+  .primary-navigation li a {
+    width: 100%;
+  }
+
   .primary-navigation {
-    --gap: 2em;
+    --gap: 0;
 
     position: fixed;
     z-index: 1000;
@@ -92,8 +107,6 @@ nav {
 
   .nav-link {
     color: var(--color-primary);
-    white-space: nowrap;
-    padding: 1em;
   }
 
   .mobile-nav-toggle {
@@ -106,13 +119,12 @@ nav {
     z-index: 9999;
     border: 0;
     background: transparent;
-    background-image: url("assets/icons/burgermenu.svg");
+    background-image: url("/assets/icons/burgermenu.svg");
     background-repeat: no-repeat;
-    fill: var(--color-secondary);
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url("assets/icons/menu-close.svg");
+    background-image: url("/assets/icons/menu-close.svg");
   }
 }
 
@@ -123,7 +135,6 @@ nav {
     padding-inline: clamp(1rem, 2vw, 3rem);
   }
 }
-
 /* ------ */
 /*  Hero  */
 /* ------ */
@@ -132,7 +143,7 @@ nav {
   flex-direction: column;
   gap: 1em;
 
-  padding-inline: 7em;
+  padding-inline: min(10rem, 7vw);
   padding-block: 5em;
   margin: 0 auto;
 
@@ -140,6 +151,8 @@ nav {
 }
 
 .hero-title {
+  max-width: 25ch;
+  font-size: var(--step-4);
   line-height: 1.25em;
   color: var(--color-primary);
 }
@@ -147,6 +160,12 @@ nav {
 .hero-text {
   max-width: 75ch;
   line-height: 1.5em;
+}
+
+@media (max-width: 35em) {
+  .hero {
+    padding-block: 2em;
+  }
 }
 
 /* ---------- */
@@ -157,7 +176,7 @@ nav {
   flex-direction: column;
   gap: 1em;
 
-  padding-inline: 7em;
+  padding-inline: min(10rem, 7vw);
   padding-block: 2em 7em;
   margin: 0 auto;
 
@@ -197,6 +216,18 @@ nav {
 }
 
 
+@media (max-width: 35em) {
+.branchen {
+  padding-block: 2em 4em;
+}
+
+  .branchen-container {
+    width: 7em;
+  }
+} 
+
+
+
 /* ------- */
 /*  Offer  */
 /* ------- */
@@ -217,7 +248,7 @@ nav {
   flex-direction: column;
   gap: 2em;
 
-  padding-inline: 7em;
+  padding-inline: min(10rem, 7vw);
   padding-block: 3em 3em;
   margin: 0 auto;
 
@@ -247,6 +278,7 @@ nav {
 
 .service-image {
   max-width: 25em;
+  width: 100%;
 }
 
 .service-text {
@@ -390,6 +422,16 @@ nav ul {
 
     padding: 1em;
     height: auto;
+  }
+
+  .primary-footer {
+    flex-direction: column;
+    padding-block: 2em 2em;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 1em;
   }
 
   .secondary-navigation {

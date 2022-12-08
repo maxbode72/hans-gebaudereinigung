@@ -348,6 +348,16 @@ nav ul {
     height: auto;
   }
 
+  .primary-footer {
+    flex-direction: column;
+    padding-block: 2em 2em;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 1em;
+  }
+
   .secondary-navigation {
     --gap: 1em;
   }
