@@ -1,27 +1,27 @@
 :root {
-    --step--2: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.8rem);
-    --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1rem);
-    --step-0: clamp(1rem, calc(0.91rem + 0.43vw), 1.25rem);
-    --step-1: clamp(1.2rem, calc(1.07rem + 0.63vw), 1.56rem);
-    --step-2: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
-    --step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
-    --step-4: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
-    --step-5: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", Helvetica, Arial;
-    font-size: 16px;
-    background-color: var(--color-secondary);
-    color: var(--color-dark);
-  }
-  
-  /* ---------------- */
-  /*   Header & nav   */
-  /* ---------------- */
-  
+  --step--2: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.8rem);
+  --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1rem);
+  --step-0: clamp(1rem, calc(0.91rem + 0.43vw), 1.25rem);
+  --step-1: clamp(1.2rem, calc(1.07rem + 0.63vw), 1.56rem);
+  --step-2: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+  --step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+  --step-4: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
+  --step-5: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Helvetica, Arial;
+  font-size: 16px;
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+/* ---------------- */
+/*   Header & nav   */
+/* ---------------- */
+
 .primary-header {
   align-items: center;
   justify-content: space-between;
@@ -68,14 +68,13 @@ nav {
     padding: 0 8em 0 0;
   }
 
-
   .primary-navigation li {
     width: 100%;
     padding: 1.5em;
     text-align: center;
   }
 
-  .primary-navigation li:nth-child(-n+3) {
+  .primary-navigation li:nth-child(-n + 3) {
     border-bottom: 1px solid var(--color-primary);
   }
 
@@ -136,325 +135,48 @@ nav {
     padding-inline: clamp(1rem, 2vw, 3rem);
   }
 }
-  /* ------ */
-  /*  Hero  */
-  /* ------ */
-  
-  .datenschutz {
-    margin: auto;
-    padding-block: 5em;
-    min-height: 80vh;
-    padding-inline: min(10rem, 7vw);
-    flex-direction: column;
-    background-color: var(--color-secondary);
-    color: var(--color-dark);
-  }
-  
-  .datenschutz-title {
-    max-width: 25ch;
-    font-size: var(--step-2);
-    line-height: 1.25em;
-    margin-bottom: .75em;
-  }
-  
-  .hero-text {
-    max-width: 45ch;
-    line-height: 1.5rem;
-    color: var(--color-secondary);
-  }
-  
-  .cta-buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2em;
-  }
-  
-  .custom-shape-divider-top-1669624244 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    fill: var(--color-primary);
-  }
-  
-  @media (max-width: 35em) {
-    .hero {
-      padding-block: 6em;
-    }
-  }
-  
-  /* --------------- */
-  /*  Image Section  */
-  /* --------------- */
-  
-  .image-section {
-    display: block;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  
-    padding-inline: min(10rem, 7vw);
-  
-    width: 100%;
-  }
-  
-  .image-content {
-    display: flex;
-    flex-wrap: wrap;
-  
-    gap: 2em;
-    position: relative;
-    transform: translateY(10em);
-    z-index: 1;
-  
-    margin: 0 auto;
-  
-    max-width: 1800px;
-  
-    justify-content: space-around;
-    align-content: space-around;
-  }
-  
-  .image-container {
-    display: flex;
-    flex: 1 1;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-  
-  .image {
-    height: 30em;
-    width: 18em;
-  
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .image-one {
-    background-image: url(/assets/top-view-of-cleaning-company-team-cleaning-modern-2022-11-02-00-41-14-utc.jpg);
-  }
-  .image-two {
-    background-image: url(/assets/workers-of-cleaning-service-company-carrying-out-t-2022-04-29-00-29-17-utc.jpg);
-    background-position: 40%;
-  }
-  .image-three {
-    background-image: url(/assets/nuno-silva-Rcsa_Rg77Tc-unsplash.jpg);
-    background-position: 15%;
-  }
-  
-  /* --------------- */
-  /*  Offer Section  */
-  /* --------------- */
-  
-  .offer-section {
-    display: flex;
-    gap: 2em;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  
-    max-width: 1800px;
-    margin: 0 auto;
-  
-    padding-block: 5em 8em;
-    padding-inline: min(10rem, 7vw);
-    width: 100%;
-  }
-  
-  .offer-content {
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
-  }
-  
-  .offer-description {
-    max-width: 75ch;
-    line-height: 1.35em;
-  }
-  
-  .offer-section button {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    width: auto;
-  }
-  
-  .offer-button {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-  }
-  
-  /* --------------- */
-  /*  Skill Section  */
-  /* --------------- */
-  
-  
-  .skill-section {
-    display: flex;
-    gap: 1em;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  
-    max-width: 1800px;
-    margin: 0 auto;
-  
-    padding-block: 3em;
-    padding-inline: min(10rem, 7vw);
-    width: 100%;
-  
-    background-color: var(--color-secondary-dark);
-  }
-  
-  .skill-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  
-    padding: 1em;
-    max-width: 30ch;
-  
-    background-color: var(--color-secondary);
-    border-radius: 10px;
-  }
-  
-  .skill-icon {
-    font-size: 2.25em !important;
-    color: var(--color-primary);
-  }
-  
-  .divider-below {
-    rotate: 180deg;
-  }
-  
-  
-  
-  /* ----------------- */
-  /*  Contact Section  */
-  /* ----------------- */
-  
-  .contact-section {
-    display: flex;
-    gap: 2em;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  
-    max-width: 1800px;
-    margin: 0 auto;
-  
-    padding-block: 5em 8em;
-    padding-inline: min(10rem, 7vw);
-    width: 100%;
-  }
-  
-  .contact-content {
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
-    max-width: 50ch;
-  }
-  
-  .contact-title a {
-    color: var(--color-primary);
-  }
-  
-  .contact-description {
-    max-width: 75ch;
-    line-height: 1.35em;
-  }
-  
-  
-  /* ------ */
-  /*  Form  */
-  /* ------ */
-  
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  
-    background-color: var(--color-secondary);
-    border-radius: 10px;
-    border: 1px solid var(--color-primary);
-  
-  
-    max-width: 400px;
-    padding: 1em;
-  
-    border-radius: 10px;
-  }
-  
-  form {
-    display: grid;
-  }
-  
-  input,
-  select,
-  textarea {
-    padding: .5rem;
-    margin-bottom: 1.5em;
-  
-    border-radius: 5px;
-    border: 2px solid var(--color-secondary-dark);
-  
-    font-family: "Inter", Helvetica, Arial;
-  }
-  
-  input :focus,
-  select :focus,
-  textarea :focus{
-    border-color: var(--color-primary);
-  }
-  
-  textarea {
-    max-width: auto;
-    resize: none;
-  }
-  
-  label {
-    font-size: .85em;
-    padding-bottom: .25em;
-    color: var(--color-dark);
-  }
-  
-  .datenschutz-box a{
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-  
-  .datenschutz-box a:hover{
-    border-bottom: 1px solid var(--color-primary) ;
-  }
-  
-  .datenschutz-checkbox {
-    margin: 0;
-  }
-  
-  .submit-btn {
-    margin-top: 2em;
-  }
-  
-  .submit-btn:hover {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    cursor: pointer;
-  } 
-  
-  
-  
-  /* -------- */
-  /*  Footer  */
-  /* -------- */
-  
+/* ------ */
+/*  Hero  */
+/* ------ */
+
+.datenschutz {
+  padding-block: 5em;
+  min-height: 80vh;
+  padding-inline: min(10rem, 7vw);
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  max-width: 100ch;
+  line-height: 1.5em;
+}
+
+.datenschutz-title {
+  max-width: 25ch;
+  font-size: var(--step-2);
+  line-height: 1.25em;
+  margin-bottom: 0.75em;
+}
+
+.datenschutz-content {
+  margin-bottom: 2em;
+}
+
+.datenschutz-content h5 {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.datenschutz-content h6 {
+  font-size: .9rem;
+  margin-bottom: .5em;
+  margin-top: .75em;
+}
+
+
+/* -------- */
+/*  Footer  */
+/* -------- */
+
 footer {
   background-color: var(--color-primary);
   color: var(--color-secondary);
@@ -482,7 +204,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em; 
+  gap: 2em;
 }
 
 .contact-container {
@@ -502,7 +224,7 @@ footer {
 
 footer nav {
   font-weight: 300;
-}   
+}
 
 nav ul {
   list-style: none;
@@ -541,7 +263,7 @@ nav ul {
     --gap: 1em;
   }
 
-  footer nav ul{
+  footer nav ul {
     display: flex;
     flex-direction: column;
   }
