@@ -244,8 +244,12 @@ nav {
   fill: var(--color-primary); 
 }
 
-
 .service {
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+.service-main {
   flex-direction: column;
   gap: 2em;
 

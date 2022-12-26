@@ -144,8 +144,8 @@ nav {
 .hero {
   margin: auto;
   padding-block: 10em;
-  min-height: 80vh;
-  padding-inline: min(10rem, 7vw);
+  min-height: min(80vh, 10rem);
+  padding-inline: min(10rem, 5vw);
   flex-direction: column;
   background-color: var(--color-primary);
 }
@@ -246,7 +246,6 @@ nav {
   align-items: center;
   justify-content: space-around;
 
-  max-width: 1800px;
   margin: 0 auto;
 
   padding-block: 3em;
