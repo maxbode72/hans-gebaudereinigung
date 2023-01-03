@@ -196,8 +196,12 @@ nav {
 /*  Skill Section  */
 /* --------------- */
 
-
 .skill-section {
+  background-color: var(--color-primary);
+}
+
+
+.skill-box {
   display: flex;
   gap: 1em;
   flex-direction: row;
@@ -210,9 +214,6 @@ nav {
 
   padding-block: 3em;
   padding-inline: min(10rem, 7vw);
-  width: 100%;
-
-  background-color: var(--color-primary);
 }
 
 .skill-container {
